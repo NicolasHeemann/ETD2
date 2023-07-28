@@ -3,6 +3,6 @@ Disciplina de Estrutura de Dados 2 para o Bacharelado de Engenharia da Computaç
 
 #Compilação
 Para compilar execute:
-´´´shell
+```shell
 make install
-´´´
+```
