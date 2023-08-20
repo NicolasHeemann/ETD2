@@ -1,4 +1,4 @@
-all: clear ponteiro ponteiro_duplo
+all: clear ponteiro ponteiro_duplo linkedlist
 
 ola: clear
 	@echo ==========================
@@ -46,7 +46,7 @@ linkedlist:
 	@echo  LISTA ENCADEADA SIMPLES
 	@echo ==========================
 	@echo Compilando o programa LinkedList
-	@gcc LinkedList.c LinkedList.h LinkedListTest.c -o LinkedList
+	@gcc --std=c99 -DLOG_USE_COLOR log.c log.h LinkedList.c LinkedList.h LinkedListTest.c -o LinkedList
 	@echo Tornando o arquivo executável
 	@chmod +x LinkedList 
 	@echo Executando o programa LinkedList
@@ -60,9 +60,11 @@ clear:
 	@echo APAGANDO TODOS OS PROGRAMAS
 	@echo ==========================
 	@echo Removendo o programa ponteiro
-	@rm -f ponteiro > /dev/null 2>&1
+	@rm -f ponteiro 
 	@echo Removendo o programa ponteiro duplo
-	@rm -f ponteiro_duplo > /dev/null 2>&1
+	@rm -f ponteiro_duplo 
+	@echo Removendo o programa LinkedList
+	@rm -f linkedlist
 
 help:
 	@echo
@@ -72,6 +74,7 @@ help:
 	@echo "all              | Compila e executa tudo"
 	@echo "ponteiro         | Ponteiro Simples"
 	@echo "ponteiro_duplo   | Ponteiro Duplo"
+	@echo "linkedlist       | LinkedList"
 	@echo "clear            | Apaga todos os programas"
 	@echo ======================================================
 	@echo
