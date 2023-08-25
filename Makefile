@@ -54,6 +54,20 @@ linkedlist:
 	@echo
 	@./LinkedList
 
+doublylinkedlist:
+	@echo
+	@echo ==============================
+	@echo  LISTA DUPLAMENTE ENCADEADA
+	@echo ==============================
+	@echo Compilando o programa DoublyLinkedList
+	@gcc  DoublyLinkedList.c DoublyLinkedList.h -o DoublyLinkedList
+	@echo Tornando o arquivo executável
+	@chmod +x DoublyLinkedList 
+	@echo Executando o programa DoublyLinkedList
+	@echo ======================================================
+	@echo
+	@./DoublyLinkedList
+
 clear:
 	@echo
 	@echo ==========================
