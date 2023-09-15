@@ -68,6 +68,20 @@ doublylinkedlist:
 	@echo
 	@./DoublyLinkedList
 
+generalizedlinkedlist:
+	@echo
+	@echo ==============================
+	@echo  LISTA GENERALIZADA
+	@echo ==============================
+	@echo Compilando o programa GeneralizedLinkedList
+	@gcc  GeneralizedLinkedList.c GeneralizedLinkedList.h GeneralizedLinkedListTest.c -o GeneralizedLinkedList
+	@echo Tornando o arquivo executável
+	@chmod +x GeneralizedLinkedList 
+	@echo Executando o programa GeneralizedLinkedList
+	@echo ======================================================
+	@echo
+	@./GeneralizedLinkedList
+
 clear:
 	@echo
 	@echo ==========================
