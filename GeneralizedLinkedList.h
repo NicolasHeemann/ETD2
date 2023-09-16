@@ -1,7 +1,7 @@
 #include <stdbool.h>
 
 typedef struct Node {
-    int type;
+    int type; //0 - átomo e 1 - lista.
     union {
         int atom;
         struct Node *list;

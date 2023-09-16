@@ -93,6 +93,8 @@ clear:
 	@rm -f ponteiro_duplo 
 	@echo Removendo o programa LinkedList
 	@rm -f linkedlist
+	@echo Removendo o programa GeneralizedLinkedList
+	@rm -f generalizedlinkedlist
 
 help:
 	@echo
