@@ -3,20 +3,20 @@
 #include <stdbool.h>
 
 typedef struct Node {
-    void *data;
-    struct Node *next;
+  void *data;
+  struct Node *next;
 }Node;
 
-typedef struct LinkedList{
-    Node *first;
-    int size;
+typedef struct LinkedList {
+  Node *first;
+  int size;
 }LinkedList;
 
-typedef bool (*compare)(void*, void*);
+typedef bool (*compare)(void*,void*);
 
 void init(LinkedList *list);
-int equeueue(LinkedList *list, void *data);
-void* dequeueu(LinkedList *list);
+int enqueue(LinkedList *list, void *data);
+void* dequeue(LinkedList *list);
 void* first(LinkedList *list);
 void* last(LinkedList *list);
 int push(LinkedList *list, void *data);

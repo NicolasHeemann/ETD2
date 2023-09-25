@@ -46,7 +46,7 @@ linkedlist:
 	@echo  LISTA ENCADEADA SIMPLES
 	@echo ==========================
 	@echo Compilando o programa LinkedList
-	@gcc --std=c99 -DLOG_USE_COLOR log.c log.h LinkedList.c LinkedList.h LinkedListTest.c -o LinkedList
+	@gcc --std=c99 -DLOG_USE_COLOR LinkedList.c LinkedList.h LinkedListTest.c -o LinkedList
 	@echo Tornando o arquivo executável
 	@chmod +x LinkedList 
 	@echo Executando o programa LinkedList
