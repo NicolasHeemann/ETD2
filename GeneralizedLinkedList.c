@@ -30,17 +30,17 @@ int addList(Node **list, Node **subList){
 
     newNode -> type = 1; //lista
     newNode -> atomlist.list = *subList; //struct atomlist recebe como 1 valor a sublista
-    newNode -> next = NULL; // próximo nó recebe nulo.
+    newNode -> tail = NULL; // próximo nó recebe nulo.
 
     if(*list == NULL){ //verificar se a lista está vazia
         *list = newNode; //Se estiver vazia recebe o novo nó como 1º
 }else{
     Node *aux = *list; // aux recebe o 1º nó
 
-    while(aux -> next != NULL) // enquanto o próximo não for nulo
-    aux = aux->next; // aux recebe o último nó
+    while(aux -> tail != NULL) // enquanto o próximo não for nulo
+    aux = aux->tail; // aux recebe o último nó
 
-    aux->next = newNode; // o último nó recebe o novo nó
+    aux->tail = newNode; // o último nó recebe o novo nó
 }
 
     return 0;
@@ -82,4 +82,18 @@ Node* head(Node *list){
             printf(" %d", list->atomlist.list->atomlist.atom);
         } 
     }
+}
+
+Node* tail(Node *list){
+    return(list)->tail;
+}
+
+int depth(Node *list){
+    int produndidade = 0;
+    if (list == NULL)
+    return 0;
+
+    Node *aux == NULL;
+    for(aux = list; aux != NULL; aux=aux->tail);
+
 }

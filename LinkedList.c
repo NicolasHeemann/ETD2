@@ -101,4 +101,31 @@ void* getPos(LinkedList *list, int pos){
     }
 }
 
+int add(LinkedList *list, int pos, void *data){
+    if(pos<=0) return push(list, data);
+
+    Node*aux = getNodeByPos(list(pos-1));
+    if(aux == NULL) return -1;
+
+    Node*newNode = (Node*)malloc(sizeof(Node));
+    if(newNode == NULL) return -1
+
+    newNode->data = data;
+    newNode->next = NULL;
+    newNode -> next = aux->next;
+    aux->next = newNode;
+
+    list->size++;
+    return 1;
+}
+
+int addAll(LinkedList *listDest, int pos, LinkedList *listSource){
+    if(listDest == NULL || isEmpty(listDest)) return -1;
+    if(listSource == NULL || isEmpty(listSource)) return -1;
+
+    
+
+}
+
+
 

@@ -42,8 +42,10 @@ int main(){
         case 4:
             printf("\nDigite um  numero:");
             scanf(" %d", &esc);
+            while(){
             addAtom(&sublist, esc);
             addList(&list, &sublist);
+            }
             break;
 
             case 5:
