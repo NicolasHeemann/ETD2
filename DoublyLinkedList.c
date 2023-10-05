@@ -26,7 +26,7 @@ void* dequeue(DoublyLinkedList *list) {
     if(isEmpty(list)) return NULL;
     Node *trash = list->first;
     Node *first = list->first->next;
-    first->next->previous = trsh;
+    first->next->previous = trash;
     trash->next = first->next;
     void *data = first->data;
     free(first);
