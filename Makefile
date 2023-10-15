@@ -82,6 +82,20 @@ generalizedlinkedlist:
 	@echo
 	@./GeneralizedLinkedList
 
+tabelahash:
+	@echo
+	@echo ==============================
+	@echo  		Tabela Hash
+	@echo ==============================
+	@echo Compilando o programa Tabela Hash
+	@gcc  Hash.c Hash.h -o Hash
+	@echo Tornando o arquivo executável
+	@chmod +x Hash 
+	@echo Executando o programa Tabela Hash
+	@echo ======================================================
+	@echo
+	@./Hash
+
 clear:
 	@echo
 	@echo ==========================
